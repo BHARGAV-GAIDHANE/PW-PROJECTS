@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP PAGE</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: 'poppins',sans-serif;
+        }
+
+        body{
+            min-height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            background-color: whitesmoke;
+            border-radius: 5px;
+            height: 480px;
+            width: 350px;
+            position: relative;
+        }
+
+        .box h2{
+            text-align: center;
+            padding: 50px;
+        }
+
+        .box form{
+            position: absolute;
+            inset: 4px;
+            display: flex;
+            flex-direction: column;
+            padding: 80px 10px 10px;
+        }
+
+        .box form .soft{
+            padding: 5px 5px;
+            position: relative;
+        }
+
+        .box form .soft input{
+            height: 25px;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .box form .soft select{
+            width: 100%;
+            height: 30px;
+            margin-top: 5px;
+        }        
+
+        .box form input[type="button"]{
+            height: 25px;
+            margin-left: 5px;
+            width: 98%;
+            margin-top: 15px;
+            background-color: #000000;
+            color: ghostwhite;
+            border-radius: 3px;
+            border: none;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Signup</h2>
+        <form action="">
+            <div class="soft">
+                <label for="">Name:</label>
+                <p></p>
+                <input type="text" name="" id="">
+            </div>
+            <div class="soft">
+                <label for="">Batch:</label>
+                <p></p>
+                <select name="batch" id="">
+                    <option value="1">Sigma 2.0</option>
+                </select>
+            </div>
+            <div class="soft">
+                <label for="">Age:</label>
+                <p></p>
+                <input type="text" name="" id="">
+            </div>
+            <div class="soft">
+                <label for="">Email:</label>
+                <p></p>
+                <input type="email" name="" id="">
+            </div>
+            <div class="soft">
+                <label for="">Password:</label>
+                <p></p>
+                <input type="password" name="" id="">
+            </div>
+            <input type="button" value="Signup">
+        </form>
+    </div>
+</body>
+</html>

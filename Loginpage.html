@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins',sans-serif;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ece9e9;
+        }
+
+        .box{
+            position: relative;
+            background-color: #ffffff;
+            height: 380px;
+            width: 350px;
+            border-radius: 10px;
+        }
+
+        .box form{
+            position: absolute;
+            inset: 4px;
+            padding: 50px 35px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box form h2{
+            text-align: center;
+            color: black;
+            margin-bottom: 40px;
+        }
+
+        .box form .inputbox{
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .box form .inputbox input{
+            position: relative;
+            padding: 20px 10px 10px;
+            outline: none;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #333;
+            height: 20px;
+            width: 250px;
+        }
+
+        .box form .inputbox label{
+            pointer-events: none;
+            left: 0px;
+            outline: none;
+            position: absolute;
+        } 
+        
+        .box form .inputbox input:valid ~ label,
+        .box form .inputbox input:focus ~ label
+        {
+            transform: translateY(-30px);
+        }
+
+        .box form input[type="button"]{
+            margin-top: 30px;
+            padding: 10px 25px ;
+            width: 280px;
+            background-color: #0e86f7;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form>
+            <h2>Login</h2>
+            <div class="inputbox">
+                <input type="email" required>
+                <label for="">Username</label>
+            </div>
+            <div class="inputbox">
+                <input type="password" required>
+                <label for="">Password</label>
+            </div>
+            <input type="button" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
